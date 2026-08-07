@@ -1,5 +1,7 @@
 # ESP32 Marauder for ILI9341 Display
 
+> **⚠️ Disclaimer:** This project is for **educational purposes only**. The user is solely responsible for compliance with all local, state, and federal laws.
+
 This repository contains a version of the ESP32 Marauder, customized to work with ILI9341 displays. The project provides an interface and various tools for network analysis and testing directly on the ESP32 platform.
 
 ## Features
