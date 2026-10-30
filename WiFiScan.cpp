@@ -1233,7 +1233,7 @@ void WiFiScan::RunGPSNmea() {
       if((SCREEN_HEIGHT / 3)<offset)
         offset=SCREEN_HEIGHT/3; //for smaller screens
       if(offset<(TOP_FIXED_AREA+6))
-        offset=TOP_FIXED_AREA+6; //absolute minimium
+        offset=TOP_FIXED_AREA+6; //absolute minimum
       display_obj.tft.setTextWrap(false);
       display_obj.tft.setFreeFont(NULL);
       display_obj.tft.setCursor(0, offset);
@@ -3580,7 +3580,7 @@ void WiFiScan::broadcastRandomSSID(uint32_t currentTime) {
 
 // Function to send probe flood to all "active" access points
 void WiFiScan::sendProbeAttack(uint32_t currentTime) {
-  // Itterate through all access points in list
+  // Iterate through all access points in list
   for (int i = 0; i < access_points->size(); i++) {
 
     // Check if active
@@ -3704,7 +3704,7 @@ void WiFiScan::sendDeauthFrame(uint8_t bssid[6], int channel, uint8_t mac[6]) {
 }
 
 void WiFiScan::sendDeauthFrame(uint8_t bssid[6], int channel, String dst_mac_str) {
-  // Itterate through all access points in list
+  // Iterate through all access points in list
   // Check if active
   WiFiScan::set_channel = channel;
   esp_wifi_set_channel(channel, WIFI_SECOND_CHAN_NONE);
@@ -3738,7 +3738,7 @@ void WiFiScan::sendDeauthFrame(uint8_t bssid[6], int channel, String dst_mac_str
 }
 
 void WiFiScan::sendDeauthAttack(uint32_t currentTime, String dst_mac_str) {
-  // Itterate through all access points in list
+  // Iterate through all access points in list
   for (int i = 0; i < access_points->size(); i++) {
 
     // Check if active

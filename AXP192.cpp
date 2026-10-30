@@ -158,7 +158,7 @@ bool AXP192::GetBatState() {
 // clear: void ClearCoulombcounter(void);
 // get charge data: uint32_t GetCoulombchargeData(void);
 // get discharge data: uint32_t GetCoulombdischargeData(void);
-// get coulomb val affter calculation: float GetCoulombData(void);
+// get coulomb val after calculation: float GetCoulombData(void);
 //------------------------------------------
 void AXP192::EnableCoulombcounter(void) {
     Write1Byte(0xB8, 0x80);
