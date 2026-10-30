@@ -532,7 +532,7 @@ void Display::drawStylus()
 //====================================================================================
 void Display::jpegRender(int xpos, int ypos) {
 
-  // retrieve infomration about the image
+  // retrieve information about the image
   uint16_t  *pImg;
   int16_t mcu_w = JpegDec.MCUWidth;
   int16_t mcu_h = JpegDec.MCUHeight;
@@ -796,7 +796,7 @@ void Display::buildBanner(String msg, int xpos)
   // Fill with rainbow stripes
   //while (h--) img.drawFastHLine(0, h, SCREEN_WIDTH, 255);
 
-  // Draw some graphics, the text will apear to scroll over these
+  // Draw some graphics, the text will appear to scroll over these
   //img.fillRect  (SCREEN_WIDTH / 2 - 20, TEXT_HEIGHT / 2 - 10, 40, 20, TFT_YELLOW);
   //img.fillCircle(SCREEN_WIDTH / 2, TEXT_HEIGHT / 2, 10, TFT_ORANGE);
 
